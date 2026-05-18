@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClientSphere Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h1 class="logo">ClientSphere</h1>
+
+        <ul>
+
+            <li><a href="#">Dashboard</a></li>
+
+            <li><a href="#">Leads</a></li>
+
+            <li><a href="#">Clients</a></li>
+
+            <li><a href="#">Analytics</a></li>
+
+            <li><a href="#">Settings</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <h1>Lead Management Dashboard</h1>
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <p>Total Leads</p>
+
+                <h2 id="total-leads">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <p>Contacted</p>
+
+                <h2 id="contacted-leads">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <p>Converted</p>
+
+                <h2 id="converted-leads">0</h2>
+
+            </div>
+
+        </div>
+
+        <!-- Add Lead Form -->
+
+        <div class="form-box">
+
+            <input type="text" id="name" placeholder="Client Name">
+
+            <input type="email" id="email" placeholder="Client Email">
+
+            <select id="status">
+
+                <option>New</option>
+
+                <option>Contacted</option>
+
+                <option>Converted</option>
+
+            </select>
+
+            <button onclick="addLead()">
+                Add Client
+            </button>
+
+        </div>
+<input type="text" id="search" placeholder="Search Client">
+        <!-- Table -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="table-body">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
